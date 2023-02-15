@@ -8,12 +8,9 @@ import os.path
 # from formula import faset
 
 
-def get_layer(dir_number, elevation_profile):
+def get_layer(elevation_profile):
     final_elevations = []
-    #qqq = len(next(os.walk('other/work_tasks/geological_crossections/data/layers'))[1])
-    #print(qqq)
-    #print(len(next(os.walk('other/work_tasks/geological_crossections/data/layers'))[1]))
-    for folder in range(dir_number):
+    for folder in range(len(next(os.walk('data/layers'))[1])):
         # print(elevation_profile)
         final_elevations.append((search_layers(folder, elevation_profile)).copy())
         # print(final_elevations[folder])

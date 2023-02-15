@@ -7,9 +7,9 @@ from functions.plotting.plot import plot_data
 #     elevation_profile, number_of_elpoints = search_profile()
 #     plot_data(elevation_profile, number_of_elpoints)
 
-def profile_layers(dir_number):
+def profile_layers():
     elevation_profile, number_of_elpoints = search_profile()
-    layers_points = get_layer(dir_number, elevation_profile.copy())
+    layers_points = get_layer(elevation_profile.copy())
     print(elevation_profile)
     #for layer in layers_points:
         #print(layer)
