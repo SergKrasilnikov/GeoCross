@@ -6,20 +6,21 @@ import os.path
 # from formula import sharpton
 # from formula import housen
 # from formula import faset
+from .formula import *
 
 
-def get_layer(elevation_profile):
+def get_layer(elevation_profile, datadir):
     final_elevations = []
-    for folder in range(len(next(os.walk('data/layers'))[1])):
+    for folder in range(len(next(os.walk(os.path.join(datadir,'layers')))[1])):
         # print(elevation_profile)
-        final_elevations.append((search_layers(folder, elevation_profile)).copy())
+        final_elevations.append((search_layers(folder, elevation_profile, datadir)).copy())
         # print(final_elevations[folder])
     return final_elevations
 
 # название папки
-def search_layers(dir_name, elevation_profile):
+def search_layers(dir_name, elevation_profile, datadir):
     dbf_list = []
-    for root, dirs, files in os.walk(os.path.abspath(f'../geological_crossections/data/layers/{dir_name}')):
+    for root, dirs, files in os.walk(os.path.join(datadir, f'layers/{dir_name}')):
         for file in files:
             if file.endswith(".dbf"):
                 dbf_list.append(file)
@@ -40,14 +41,14 @@ def get_layers_data(root, files_list, elevation_profile):
 
 
 def get_diameter(root, file):
-    table = DBF(f'{root}\\{file}', load=True)
+    table = DBF(os.path.join(root,file), load=True)
     diameter = table.records[0]['DIAM']
     return diameter #float
 
 def get_thickness(root, file, diameter):
     row = 0
     temp_list = []
-    table = DBF(f'{root}\\{file}', load=True)
+    table = DBF(os.path.join(root,file), load=True)
     for _ in table:
         thickness = formula_determination(diameter, table.records[0 + row]['DISTANCE'])
         temp_list.append(thickness)
@@ -61,32 +62,32 @@ def get_thickness(root, file, diameter):
 #Bob
 
 
-# determination of formula
-def formula_determination(diameter, distance):
-    if diameter < 45.0:
-        thickness = sharpton(diameter, distance)
-    elif diameter >= 45.0 and diameter <= 300.0:
-        thickness = housen(diameter, distance)
-    else:
-        thickness = faset(diameter, distance)
-    return thickness
+# # determination of formula
+# def formula_determination(diameter, distance):
+#     if diameter < 45.0:
+#         thickness = sharpton(diameter, distance)
+#     elif diameter >= 45.0 and diameter <= 300.0:
+#         thickness = housen(diameter, distance)
+#     else:
+#         thickness = faset(diameter, distance)
+#     return thickness
 
-# Sharpton - <45 km
-def sharpton(diameter, distance):
-    thickness = 3.95 * ((diameter * 500) ** 0.399) * (distance / (diameter * 500)) ** -3.0
-    return thickness
-
-
-# Hausen - 45-300 km
-def housen(diameter, distance):
-    thickness = 0.0078 * (diameter * 500) * (distance / (diameter * 500)) ** -2.61
-    return thickness
+# # Sharpton - <45 km
+# def sharpton(diameter, distance):
+#     thickness = 3.95 * ((diameter * 500) ** 0.399) * (distance / (diameter * 500)) ** -3.0
+#     return thickness
 
 
-# Faset - >300 km
-def faset(diameter, distance):
-    thickness = 2900.0 * (distance / (diameter * 500)) ** -2.8
-    return thickness
+# # Hausen - 45-300 km
+# def housen(diameter, distance):
+#     thickness = 0.0078 * (diameter * 500) * (distance / (diameter * 500)) ** -2.61
+#     return thickness
+
+
+# # Faset - >300 km
+# def faset(diameter, distance):
+#     thickness = 2900.0 * (distance / (diameter * 500)) ** -2.8
+#     return thickness
 
 
 
