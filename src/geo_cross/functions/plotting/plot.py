@@ -5,7 +5,7 @@ import numpy as np
 from dbfread import DBF
 import os.path
 
-def plot_data(z_list_el, xz_list_el, z_list):
+def plot_data(z_list_el, xz_list_el, z_list, datadir):
     x = np.array(xz_list_el)
     y = np.array(z_list_el)
     fig = plt.figure(figsize=(52, 20))
@@ -26,6 +26,6 @@ def plot_data(z_list_el, xz_list_el, z_list):
     axes.grid(which='minor', axis='x', linewidth=0.1, linestyle='-', color='grey', alpha=0.5)
     axes.grid(which='minor', axis='y', linewidth=0.1, linestyle='-', color='grey', alpha=0.5)
 
-    plt.savefig(os.path.abspath(f'../geological_crossections/data/output/output.svg'), dpi=500)
+    plt.savefig(os.path.join(datadir,'output/output.svg'), dpi=500)
 
     plt.show()
