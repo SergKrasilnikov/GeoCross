@@ -14,7 +14,8 @@ def plot_data(z_list_el, xz_list_el, z_list, datadir):
         plt.plot(xz_list_el, list)
 
     axes = plt.subplot(1, 1, 1)
-    axes.axis([0, 25000, -8000, 1000])
+    # axes.axis([0, 38000, -1500, 6400]) #parameters for X and  Y axes. Need to be changed each profile. 11_profile
+    axes.axis([0, 24000, -7500, 1500]) # 6_profile
     axes.xaxis.set_major_locator(MultipleLocator(1000.0))
     axes.yaxis.set_major_locator(MultipleLocator(1000.0))
     axes.xaxis.set_minor_locator(MultipleLocator(100.0))
@@ -26,6 +27,6 @@ def plot_data(z_list_el, xz_list_el, z_list, datadir):
     axes.grid(which='minor', axis='x', linewidth=0.1, linestyle='-', color='grey', alpha=0.5)
     axes.grid(which='minor', axis='y', linewidth=0.1, linestyle='-', color='grey', alpha=0.5)
 
-    plt.savefig(os.path.join(datadir,'output/output.svg'), dpi=500)
+    plt.savefig(os.path.join(datadir,'output/output.svg'), dpi=400)
 
     plt.show()

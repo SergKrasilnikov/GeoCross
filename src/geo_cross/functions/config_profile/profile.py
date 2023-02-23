@@ -15,7 +15,7 @@ def search_profile(datadir):
 
 def get_profile_data(files_list, root):
     x_list = []
-    perm_list = []
+    #perm_list = []
     temp_list = []
     for file in files_list:
         row = 0
@@ -28,6 +28,4 @@ def get_profile_data(files_list, root):
             row += 1
             x_list.append(row * 100)
         x_list.pop()
-    print(temp_list)
-    print(x_list)
     return temp_list, x_list

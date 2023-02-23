@@ -11,7 +11,7 @@ from .formula import *
 
 def get_layer(elevation_profile, datadir):
     final_elevations = []
-    for folder in range(len(next(os.walk(os.path.join(datadir,'layers')))[1])):
+    for folder in reversed(range(len(next(os.walk(os.path.join(datadir, 'layers')))[1]))):
         # print(elevation_profile)
         final_elevations.append((search_layers(folder, elevation_profile, datadir)).copy())
         # print(final_elevations[folder])
@@ -20,7 +20,7 @@ def get_layer(elevation_profile, datadir):
 # название папки
 def search_layers(dir_name, elevation_profile, datadir):
     dbf_list = []
-    for root, dirs, files in os.walk(os.path.join(datadir, f'layers/{dir_name}')):
+    for root, dirs, files in os.walk(os.path.join(datadir, fr'layers\{dir_name}')):
         for file in files:
             if file.endswith(".dbf"):
                 dbf_list.append(file)

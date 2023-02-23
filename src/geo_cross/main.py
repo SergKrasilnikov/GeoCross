@@ -1,10 +1,5 @@
-# from loader import only_profile
 from .loader import profile_layers
-# import loader
 import argparse
-
-
-
 
 def parser():
     parser = argparse.ArgumentParser(
@@ -16,11 +11,8 @@ def parser():
     args = parser.parse_args()
     return args
 
-
 def main():
     args = parser()
 
     if args.datadir is not None:
         profile_layers(args.datadir)
-
-
