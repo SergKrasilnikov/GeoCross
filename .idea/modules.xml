@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/geocross.iml" filepath="$PROJECT_DIR$/.idea/geocross.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GeoCross.iml" filepath="$PROJECT_DIR$/.idea/GeoCross.iml" />
     </modules>
   </component>
 </project>

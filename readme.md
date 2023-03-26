@@ -1,11 +1,6 @@
-## GeoCross - Drawing of the Geological Cross-Section of the Ejecta Materials on the Moon
-Planetary Remote Sensing Laboratory / Department of Land Surveying & Geo-Informatics / 
-The Hong Kong Polytechnic University
-
-in cooperation with 
-
-Laboratory of Comparative Planetology / Vernadsky Institute of Geochemistry and Analytical 
-Chemistry RAS
+## GeoCross - Geological Cross-Section Mapping of the Ejecta Materials on the Moon
+Planetary Remote Sensing Laboratory / The Hong Kong Polytechnic University & Laboratory of Comparative Planetology / 
+Vernadsky Institute of Geochemistry and Analytical Chemistry RAS
 
 ---
 
@@ -30,6 +25,24 @@ This program allow to draw the fellow geological cross-sections in automatical r
 
 After correction of the cross-section we have the fellow result:
 ![cross-section throw the 9th landing site of the Artemis mission](./data/output/final_example.jpg)
+
+---
+
+### Pre-procassing stage
+Preparation of data conducted in the GIS program (ArcGis - in my example).
+
+(1) Drawing a line on the surface. It will be a profile of the cross-section. Build points along the line with 100 m 
+intervals (Generate Points Along Lines).
+
+(2) Get X, Y, Z attributes.
+
+(3) Using points in the centre of each crater from which you want to calculate ejecta thickness, calculate the distance 
+between this point and the profiles' points (Point Distance). Make .dbf file. Add a column named "DIAM" with a diameter 
+of the crater in km. Export this file as .dbf. Open it and sort values "NEAR_FID". Make the same movements for all 
+craters, which ejecta could be found in the area with your cross-section.
+
+(4) Add all files to the program. profile.dbf add to the data\elevation. Files with distances between craters and 
+cross-section points - data\layers\"NUMBER OF FOLDERS (IF 0-IS LOWER LAYER)".
 
 ---
 
