@@ -75,10 +75,12 @@ geological structure of the Artemis landing sites will be published in Krasilnik
 Some results already used in Krasilnikov et al., (2022, 2023b, 2023c):
 
 >Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2023a. IN PRESS
-
+>
 >Krasilnikov, S.S., Ivanov, M.A., Head, J.W., Krasilnikov, A.S., 2023b. Geologic history of the south circumpolar
 > region (SCR) of the moon. Icarus, 115422.
+> 
 >Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2023c. Estimation of ejecta thickness from impact 
 > craters in the South polar region of the Moon, Solar System Research, Vol. 57, No. 2, pp. 122–132.
+> 
 >Krasilnikov, S.S., Krasilnikov, A.S., Ivanov, M.A., 2022. Geological Details of the Main Landing Ellipses of
 > Luna-25. Solar System Research, 56(3), 135-144.
