@@ -1,6 +1,14 @@
 ## GeoCross - Geological Cross-Section Mapping of the Ejecta Materials on the Moon
+
+---
 Planetary Remote Sensing Laboratory / The Hong Kong Polytechnic University & Laboratory of Comparative Planetology / 
 Vernadsky Institute of Geochemistry and Analytical Chemistry RAS
+
+### Author
+- [Sergey Krasilnikov](https://github.com/SergKrasilnikov)
+### Contributors
+- [Anastasiia Radaeva](https://github.com/AnastasiiaRadaeva)
+- [Azat Almukhametov](https://github.com/gigabotan)
 
 ---
 
@@ -8,18 +16,22 @@ Vernadsky Institute of Geochemistry and Analytical Chemistry RAS
 This program builds geological cross-sections of the ejecta deposits on the Moon based on the models: Sharpton (2014), 
 Housen et al., (1983) and  Fassett et al., (2011).
 
-```
-Sharpton, (2014) - for craters < 45 km
-T = 0.033*R*(r/R)^-3
+Sharpton, (2014) - for craters < 45 km in diameter:
 
-Housen et al., (1983)
-T = 0.0078*R*(r/R)^-2.61 - for craters in a diameter range from 45 to 300 km
 
-Fassett et al., (2011) - for impact basins > 300 km
-T = 2900(±300)*(r/R)^(- 2.8(±0.5))
+$$T = 0.033*R*(r/R)^-3$$
+
+Housen et al., (1983) - for craters in a diameter range from 45 to 300 km:
+
+$$T = 0.0078*R*(r/R)^-2.61$$
+
+Fassett et al., (2011) - for impact basins > 300 km:
+
+$$T = 2900(±300)*(r/R)^(- 2.8(±0.5))$$
 
 In all formulae, r is the distance to the point of interest, R is crater radius; both are in meters.
-```
+
+
 This program allow to draw the fellow geological cross-sections in automatical regime:
 ![cross-section throw the 9th landing site of the Artemis mission](./data/output/9.jpg)
 
@@ -47,24 +59,17 @@ cross-section points - data\layers\"NUMBER OF FOLDERS (IF 0-IS LOWER LAYER)".
 ---
 
 ### Running
-Locate 'profile.dbf' with elevation profile in the folder (...\data\elevation\)
+Locate 'profile.dbf' with elevation profile in the folder `(...\data\elevation\)`
 
-Locate layers .dbf files in the folder (...\data\layers\'NUMBER OF LAYER') - starts from the lower layer/layers at the 
+Locate layers .dbf files in the folder `(...\data\layers\'NUMBER OF LAYER')` - starts from the lower layer/layers at the 
 zero folder until upper layer at the latest number.
 
-To run this code type in the terminal in the folder with run.py file (...\src\):
-```
-python run.py \'ABSOLUTE LOCATION OF THE \'data\' DIRECTORY\'
-```
-Results will be stored in the folder (...\data\output\) in the .jpg and .svg formats.
+To run this code type in the terminal in the folder with `run.py file (...\src\)`:
 
----
+`python run.py \'ABSOLUTE LOCATION OF THE \'data\' DIRECTORY\'`
 
-### Author
-- Sergey Krasilnikov
-### Contributors
-- Anastasiia Radaeva
-- Azat Almukhametov
+Results will be stored in the folder `(...\data\output\)` in the .jpg and .svg formats.
+
 
 ---
 
