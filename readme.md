@@ -18,11 +18,11 @@ Housen et al., (1983) and  Fassett et al., (2011).
 
 Sharpton, (2014) - for craters < 45 km in diameter:
 
-$T = 0.033*R*(r/R)^-3$
+$$T = 0.033\*R*(r/R)^{-3}$$
 
 Housen et al., (1983) - for craters in a diameter range from 45 to 300 km:
 
-$$T = 0.0078*R*(r/R)^{-2.61}$$
+$$T = 0.0078\*R*(r/R)^{-2.61}$$
 
 Fassett et al., (2011) - for impact basins > 300 km:
 
