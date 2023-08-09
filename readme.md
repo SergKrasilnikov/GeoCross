@@ -89,7 +89,7 @@ geological structure of the Artemis landing sites will be published in Krasilnik
 Some results already used in Krasilnikov et al., (2022, 2023a, 2023b):
 
 >Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2024. IN PRESS
->
+
 >Krasilnikov, S.S., Ivanov, M.A., Head, J.W., Krasilnikov, A.S., 2023a. Geologic history of the south circumpolar
 > region (SCR) of the Moon. Icarus, 115422.
 > 
