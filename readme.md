@@ -39,11 +39,7 @@ looking closer to the classical view (Fig. 1.B).
     src="./data/readme_images/fig1.jpg"
     alt="Cross-section of the Artemis mission's landing site"
     caption="Fig. 1. Cross-section throw the 1st and 2d landing sites of the Artemis mission."
-    width="200"/>
-
-
-![Cross-section of the Artemis mission's landing site](./data/readme_images/fig1.jpg "Fig. 1. 
-Cross-section throw the 1st and 2d landing sites of the Artemis mission" )
+    height="400"/>
 
 ---
 
@@ -59,10 +55,7 @@ intervals (Generate Points Along Lines).
     src="./data/readme_images/fig2.jpg"
     alt="Measuring the distance between the crater centre and each profile point"
     caption="Fig. 2. Measuring the distance between the crater centre and each profile point."
-    width="200"/>
-
-![Measuring the distance between the crater centre and each profile point](./data/readme_images/fig2.jpg "Fig. 2. 
-Measuring the distance between the crater centre and each profile point." )
+    height="400"/>
 
 (3) Using points in the centre of each crater from which you want to calculate ejecta thickness, calculate the distance 
 between this point and the profiles' points (Point Distance). Make .dbf file. Add a column named "DIAM" with a diameter 
