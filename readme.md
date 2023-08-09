@@ -28,14 +28,22 @@ Fassett et al., (2011) - for impact basins > 300 km:
 
 $$T = 2900(±300)*(r/R)^{(- 2.8(±0.5))}$$
 
-In all formulae, r is the distance to the point of interest, R is crater radius; both are in meters.
+In all formulae, r is the distance to the point of interest, and R is the crater radius (both are in meters).
 
 
-This program allow to draw the fellow geological cross-sections in automatical regime:
-![cross-section throw the 9th landing site of the Artemis mission](./data/output/9.jpg)
+This program allows drawing the geological cross-sections of ejecta materials in an automatical regime (Fig. 1.A).
+After manually correcting the profile using the geologic map (Krasilnikov et al., 2023), the cross-section starts 
+looking closer to the classical view (Fig. 1.B).
 
-After correction of the cross-section we have the fellow result:
-![cross-section throw the 9th landing site of the Artemis mission](./data/output/final_example.jpg)
+<image
+    src="./data/readme_images/fig1.jpg"
+    alt="Cross-section of the Artemis mission's landing site"
+    caption="Fig. 1. Cross-section throw the 1st and 2d landing sites of the Artemis mission."
+    width="200"/>
+
+
+![Cross-section of the Artemis mission's landing site](./data/readme_images/fig1.jpg "Fig. 1. 
+Cross-section throw the 1st and 2d landing sites of the Artemis mission" )
 
 ---
 
@@ -46,6 +54,15 @@ Preparation of data conducted in the GIS program (ArcGis - in my example).
 intervals (Generate Points Along Lines).
 
 (2) Get X, Y, Z attributes.
+
+<image
+    src="./data/readme_images/fig2.jpg"
+    alt="Measuring the distance between the crater centre and each profile point"
+    caption="Fig. 2. Measuring the distance between the crater centre and each profile point."
+    width="200"/>
+
+![Measuring the distance between the crater centre and each profile point](./data/readme_images/fig2.jpg "Fig. 2. 
+Measuring the distance between the crater centre and each profile point." )
 
 (3) Using points in the centre of each crater from which you want to calculate ejecta thickness, calculate the distance 
 between this point and the profiles' points (Point Distance). Make .dbf file. Add a column named "DIAM" with a diameter 
@@ -75,15 +92,15 @@ Results will be stored in the folder `(...\data\output\)` in the .jpg and .svg f
 
 ### How to cite:
 The theoretical explanation and application of the program in the envestigation of the 
-geological structure of the Artemis landing sites will be published in Krasilnikov et al., (2023a).
-Some results already used in Krasilnikov et al., (2022, 2023b, 2023c):
+geological structure of the Artemis landing sites will be published in Krasilnikov et al., (2024).
+Some results already used in Krasilnikov et al., (2022, 2023a, 2023b):
 
->Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2023a. IN PRESS
+>Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2024. IN PRESS
 >
->Krasilnikov, S.S., Ivanov, M.A., Head, J.W., Krasilnikov, A.S., 2023b. Geologic history of the south circumpolar
-> region (SCR) of the moon. Icarus, 115422.
+>Krasilnikov, S.S., Ivanov, M.A., Head, J.W., Krasilnikov, A.S., 2023a. Geologic history of the south circumpolar
+> region (SCR) of the Moon. Icarus, 115422.
 > 
->Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2023c. Estimation of ejecta thickness from impact 
+>Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2023b. Estimation of ejecta thickness from impact 
 > craters in the South polar region of the Moon, Solar System Research, Vol. 57, No. 2, pp. 122–132.
 > 
 >Krasilnikov, S.S., Krasilnikov, A.S., Ivanov, M.A., 2022. Geological Details of the Main Landing Ellipses of
