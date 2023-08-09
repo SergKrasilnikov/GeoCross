@@ -58,7 +58,7 @@ intervals (Generate Points Along Lines).
     height="400"/>
 
 (3) Using points in the centre of each crater from which you want to calculate ejecta thickness, calculate the distance 
-between this point and the profiles' points (Point Distance). Make .dbf file. Add a column named "DIAM" with a diameter 
+between this point and the profiles' points (Point Distance) (Fig. 2). Make .dbf file. Add a column named "DIAM" with a diameter 
 of the crater in km. Export this file as .dbf. Open it and sort values "NEAR_FID". Make the same movements for all 
 craters, which ejecta could be found in the area with your cross-section.
 
