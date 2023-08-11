@@ -41,6 +41,8 @@ looking closer to the classical view (Fig. 1.B).
     title="Fig. 1. Cross-section throw the 1st and 2d landing sites of the Artemis mission."
     height="400"/>
 
+Fig. 1. Cross-section throw the 1st and 2d landing sites of the Artemis mission.
+
 ---
 
 ### Pre-procassing stage
@@ -56,6 +58,8 @@ intervals (Generate Points Along Lines).
     alt="Measuring the distance between the crater centre and each profile point"
     title="Fig. 2. Measuring the distance between the crater centre and each profile point."
     height="400"/>
+
+Fig. 2. Measuring the distance between the crater centre and each profile point.
 
 (3) Using points in the centre of each crater from which you want to calculate ejecta thickness, calculate the distance 
 between this point and the profiles' points (Point Distance) (Fig. 2). Make .dbf file. Add a column named "DIAM" with a diameter 
@@ -88,7 +92,7 @@ The theoretical explanation and application of the program in the envestigation 
 geological structure of the Artemis landing sites will be published in Krasilnikov et al., (2024).
 Some results already used in Krasilnikov et al., (2022, 2023a, 2023b):
 
->Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2024. IN PRESS
+>Krasilnikov, A.S., Ivanov, M.A., Krasilnikov, S.S., Head, J.W., 2024. IN PRESS
 
 >Krasilnikov, S.S., Ivanov, M.A., Head, J.W., Krasilnikov, A.S., 2023a. Geologic history of the south circumpolar
 > region (SCR) of the Moon. Icarus, 115422.
