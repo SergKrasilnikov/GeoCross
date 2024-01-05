@@ -13,7 +13,8 @@ def plot_data(z_list_el, xz_list_el, z_list, datadir):
         plt.plot(xz_list_el, list)
 
     axes = plt.subplot(1, 1, 1)
-    axes.axis([0, 21500, -1500, 5500]) # parameters for X and Y axes. Need to be changed for each profile
+    axes.axis([0, 11200, 5300, 6400]) # parameters for X and Y axes. Need to be changed for each profile
+    #[X1, X2, Y1, Y2]; X - lenght from 0 to max; Y1 - min Z values, Y2 - max Z values.
     axes.xaxis.set_major_locator(MultipleLocator(1000.0))
     axes.yaxis.set_major_locator(MultipleLocator(1000.0))
     axes.xaxis.set_minor_locator(MultipleLocator(100.0))

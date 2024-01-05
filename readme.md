@@ -48,10 +48,13 @@ Fig. 1. Cross-section throw the 1st and 2d landing sites of the Artemis mission.
 ### Pre-procassing stage
 Preparation of data conducted in the GIS program (ArcGis - in my example).
 
-(1) Drawing a line on the surface. It will be a profile of the cross-section. Build points along the line with 100 m 
-intervals (Generate Points Along Lines).
+(1) The profile on the surface.
+Drawing a line on the surface. It will be a profile of the cross-section. Build points along the line with 100 m 
+intervals (Generate Points Along Lines). Better to "Include End Points".
 
 (2) Get X, Y, Z attributes.
+"Add Field" "x" and "y" (Double type) in the attribute table in meters. Use "Extract Values to Points" to extract "z" 
+values. Export the file as "profile.dbf" ("Export" in the attribute table).
 
 <image
     src="./data/readme_images/fig2.jpg"
@@ -61,27 +64,31 @@ intervals (Generate Points Along Lines).
 
 Fig. 2. Measuring the distance between the crater centre and each profile point.
 
-(3) Using points in the centre of each crater from which you want to calculate ejecta thickness, calculate the distance 
-between this point and the profiles' points (Point Distance) (Fig. 2). Make .dbf file. Add a column named "DIAM" with a diameter 
-of the crater in km. Export this file as .dbf. Open it and sort values "NEAR_FID". Make the same movements for all 
-craters, which ejecta could be found in the area with your cross-section.
+(3) Calculate the distance from the crater to the points.
+Using points in the centre of each crater from which you want to calculate ejecta thickness, calculate the distance 
+between this point and the profiles' points (Point Distance) (Fig. 2). Add a column named "DIAM" with a diameter of 
+the crater in km. Export this file as .dbf ("Export" in the attribute table). Open it and sort values "NEAR_FID" 
+(could be done in LibreOffice). Make the same movements for all craters, which ejecta could be found in the area of 
+your cross-section.
 
-(4) Add all files to the program. profile.dbf add to the data\elevation. Files with distances between craters and 
-cross-section points - data\layers\"NUMBER OF FOLDERS (IF 0-IS LOWER LAYER)".
+(4) Naming of .dbf files.
+The .dbf file with the profile should be called "profile.dbf". The layers files with distances between craters and 
+cross-section points should be called by numbers (like "0.dbf"). IF 0-IS LOWER LAYER AT THE CROSS-SECTION.
+
+(5) Location of the files.
+Add all files to the program folders.
+Locate 'profile.dbf' with elevation profile in the folder `(...\data\elevation\)`
 
 ---
 
 ### Running
-Locate 'profile.dbf' with elevation profile in the folder `(...\data\elevation\)`
-
-Locate layers .dbf files in the folder `(...\data\layers\'NUMBER OF LAYER')` - starts from the lower layer/layers at the 
-zero folder until upper layer at the latest number.
-
-To run this code type in the terminal in the folder with `run.py file (...\src\)`:
+To run this code type in the terminal in the folder with `...\src\`:
 
 `python run.py \'ABSOLUTE LOCATION OF THE \'data\' DIRECTORY\'`
 
 Results will be stored in the folder `(...\data\output\)` in the .jpg and .svg formats.
+
+You can correct plot settings if axes are wrong in the file `(...\src\geo_cross\functions\plotting\plot.py`.
 
 
 ---
