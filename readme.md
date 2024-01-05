@@ -50,7 +50,7 @@ Preparation of data conducted in the GIS program (ArcGis - in my example).
 
 (1) The profile on the surface.
 Drawing a line on the surface. It will be a profile of the cross-section. Build points along the line with 100 m 
-intervals (Generate Points Along Lines). Better to "Include End Points".
+intervals ("Creating new points along a line"). Better to "Include End Points".
 
 (2) Get X, Y, Z attributes.
 "Add Field" "x" and "y" (Double type) in the attribute table in meters. Use "Extract Values to Points" to extract "z" 
