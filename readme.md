@@ -95,14 +95,15 @@ You can correct plot settings if axes are wrong in the file `(...\src\geo_cross\
 
 
 ### How to cite:
-The theoretical explanation and application of the program in the envestigation of the 
-geological structure of the Artemis landing sites will be published in Krasilnikov et al., (2024).
+The theoretical explanation and application of the program in the investigating the 
+geological structure of the Artemis landing sites was published in Krasilnikov et al., (2024).
 Some results already used in Krasilnikov et al., (2022, 2023a, 2023b):
 
->Krasilnikov, A.S., Ivanov, M.A., Krasilnikov, S.S., Head, J.W., 2024. IN PRESS
+>Krasilnikov, A.S., Ivanov, M.A., Krasilnikov, S.S., Head, J.W., 2024. Stratigraphic cross-sections, geologic history, 
+> and provenance of material at the candidate landing sites of the Artemis missions. Icarus, 420, 116190.
 
 >Krasilnikov, S.S., Ivanov, M.A., Head, J.W., Krasilnikov, A.S., 2023a. Geologic history of the south circumpolar
-> region (SCR) of the Moon. Icarus, 115422.
+> region (SCR) of the Moon. Icarus, 394, 115422.
 > 
 >Krasilnikov, A.S., Krasilnikov, S.S., Ivanov, M.A., Head, J.W., 2023b. Estimation of ejecta thickness from impact 
 > craters in the South polar region of the Moon, Solar System Research, Vol. 57, No. 2, pp. 122–132.
