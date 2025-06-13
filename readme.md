@@ -45,7 +45,7 @@ Fig. 1. Cross-section throw the 1st and 2d landing sites of the Artemis mission.
 
 ---
 
-### Pre-procassing stage
+### Preprocessing stage
 Preparation of data conducted in the GIS program (ArcGis - in my example).
 
 (1) The profile on the surface.
